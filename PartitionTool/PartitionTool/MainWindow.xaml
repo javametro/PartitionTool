@@ -1,0 +1,65 @@
+﻿<Window x:Class="PartitionTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:PartitionTool"
+        mc:Ignorable="d"
+        Title="Partition Tool" Height="450" Width="800">
+    <!--<Grid>
+        
+
+
+        <TextBlock x:Name="MyTextBlock" Text="Which drive you want to partition?" FontSize="24" TextAlignment="Center">
+            
+        </TextBlock>
+    </Grid>-->
+
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Button Content="Button" />
+        <Button Content="Button" Grid.Column="1" />
+        <Button Content="Button" Grid.Column="2"/>
+        <Button Content="This is my extra long button" Grid.Column="3"/>
+        <Button Content="This button spans across columns" Grid.Row="1" Grid.ColumnSpan="4"/>
+    </Grid>-->
+
+    <Window.Resources>
+        <sys:String x:Key="TextBlockLabel">Not Clicked</sys:String>
+    </Window.Resources>
+    <StackPanel>
+        <Button Content="Click Me!" Click="AddItemButton_OnClick" />
+        <TextBlock Text="{DynamicResource TextBlockLabel}" HorizontalAlignment="Center" />
+    </StackPanel>
+    
+
+    <!--<StackPanel Orientation="Vertical">
+        <Button Content="Button A" />
+        <Button Content="Button B" />
+        <Button Content="Button C" />
+        <Button Content="This is my extra long button" />
+
+        <TextBox Padding="10,20"
+TextWrapping="Wrap"
+Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget
+consequat nulla. Sed vehicula posuere quam eu lobortis." />
+        <TextBox Margin="10,20"
+TextWrapping="Wrap"
+Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget
+consequat nulla. Sed vehicula posuere quam eu lobortis." />
+    </StackPanel>-->
+
+</Window>
