@@ -6,7 +6,19 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:PartitionTool"
         mc:Ignorable="d"
-        Title="Partition Tool" Height="450" Width="800">
+        Title="Partition Tool" Height="300" Width="400">
+    <StackPanel>
+        <TextBlock Name ="textBlock" TextWrapping="Wrap" xml:space="preserve" TextAlignment="Left">
+            本ツールはパーティションの設定を変更ことができます。
+            ★例えば、Cドライブのサイズを分割したり、
+            Dドライブを削除してCドライブのサイズを増やす事ができます。
+            画面に従って操作してください。
+            「次へ」ボタンを押してください。 
+        </TextBlock>
+        <Button Height="60" Width="120" Click="Button_OnClick">
+            次へ
+        </Button>
+    </StackPanel>
     <!--<Grid>
         
 
@@ -37,13 +49,13 @@
         <Button Content="This button spans across columns" Grid.Row="1" Grid.ColumnSpan="4"/>
     </Grid>-->
 
-    <Window.Resources>
+    <!--<Window.Resources>
         <sys:String x:Key="TextBlockLabel">Not Clicked</sys:String>
     </Window.Resources>
     <StackPanel>
         <Button Content="Click Me!" Click="AddItemButton_OnClick" />
         <TextBlock Text="{DynamicResource TextBlockLabel}" HorizontalAlignment="Center" />
-    </StackPanel>
+    </StackPanel>-->
     
 
     <!--<StackPanel Orientation="Vertical">

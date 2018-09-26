@@ -21,18 +21,9 @@ namespace PartitionTool
     /// </summary>
     public partial class MainWindow : Window
     {
-
-        private int clickedCount = 0;
-
         public MainWindow()
         {
             InitializeComponent();
-
-            //
-            // Get Drives status
-            //
-            //GetDrives();
-
         }
 
         public void GetDrives()
@@ -49,10 +40,9 @@ namespace PartitionTool
             }
         }
 
-        private void AddItemButton_OnClick(object sender, RoutedEventArgs e)
+        private void Button_OnClick(object sender, RoutedEventArgs e)
         {
-            this.Resources["TextBlockLabel"] = string.Format("Clicked {0} time(s)",
-            ++clickedCount);
+            textBlock.Text = @"「開始」ボタンを押すと「ディスクの管理」が起動します。\n「ディスクの管理」画面でパーティション設定の変更を行ってください。\n変更したいドライブを右クリックし、表示されるメニューから必要な操作を\n選んでください。";
         }
     }
 }
